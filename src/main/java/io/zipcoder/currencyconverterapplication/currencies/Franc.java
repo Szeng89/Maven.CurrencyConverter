@@ -10,7 +10,7 @@ public class Franc implements ConvertableCurrency {
     }
 
     @Override
-    public CurrencyType getName() {
+    public String getName() {
         return null;
     }
 }

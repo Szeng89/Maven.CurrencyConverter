@@ -10,7 +10,7 @@ public class Rupee implements ConvertableCurrency {
     }
 
     @Override
-    public CurrencyType getName() {
+    public String getName() {
         return null;
     }
 }
