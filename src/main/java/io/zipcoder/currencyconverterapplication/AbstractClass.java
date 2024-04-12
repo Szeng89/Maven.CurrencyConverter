@@ -2,8 +2,8 @@ package io.zipcoder.currencyconverterapplication;
 
 public abstract class AbstractClass implements ConvertableCurrency {
 
-    public String name;
-    public CurrencyType currencyType;
+    String name;
+    CurrencyType currencyType;
 
     public AbstractClass(String name) {
         this.name = name;
@@ -16,6 +16,8 @@ public abstract class AbstractClass implements ConvertableCurrency {
     }
 
     public Double convert(CurrencyType currencyType) {
-        return currencyType.getRate() / this.currencyType.getRate();
+
+        return currencyType.getRate() / this.currencyType.getRate(); //this represents the current currency object calling the method. which would be the sourceCurrencyType in currencyConverter
+
     }
 }
